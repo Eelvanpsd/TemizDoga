@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Çevre Temizleme Oyunu</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <div class="level-info">Seviye: <span id="currentLevel">1</span> / <span id="totalLevels">5</span></div>
+  <div class="progress-container">
+    <div id="progressBar" class="progress-bar"></div>
+  </div>
+  <h1>Çevre Temizleme Oyunu</h1>
+  <p>Kirli görüntüyü temizlemek için farenin sol tuşuna basılı tutun!</p>
+  <div class="canvas-container">
+    <canvas id="bottomCanvas" width="800" height="600"></canvas>
+    <canvas id="topCanvas" width="800" height="600"></canvas>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h2>Tebrikler!</h2>
+      <p id="modalMessage">Dünya'yı daha temiz bir yer haline getirdiğiniz için teşekkürler!</p>
+      <button id="nextLevelBtn" onclick="nextLevel()">Sonraki Temizliğe Geç</button>
+    </div>
+  </div>
+
+  <div id="performanceStats"></div>
+
+  <script src="/assets/script.js"></script>
+</body>
+</html>
