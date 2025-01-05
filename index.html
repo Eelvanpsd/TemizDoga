@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <title>Çevre Temizleme Oyunu</title>
   <link rel="stylesheet" href="/assets/style.css">
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const isMobileDevice = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    if (isMobileDevice) {
+      window.location.href = "https://farkindaol.vercel.app/";
+    }
+  });
+</script>
+
 </head>
 <body>
   <div class="level-info">Seviye: <span id="currentLevel">1</span> / <span id="totalLevels">5</span></div>
